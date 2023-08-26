@@ -4,7 +4,7 @@ metadata:
   - name: vpromq01
 spec :
   selector:
-    app: vpromrq
+    app: vprormq
   ports:
     - port: 15672
       targetPort: vprormq-port
