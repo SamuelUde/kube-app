@@ -1,9 +1,9 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  - name: vpromc
-    labels:
-      app: vpromc
+  name: vpromc
+  labels:
+    app: vpromc
 spec:
   selector:
     matchLabels:
@@ -11,9 +11,8 @@ spec:
   replicas: 1
   template:
     metadata:
-      - name: vpromc
-        labels:
-          app: vpromc
+      labels:
+        app: vpromc
     spec:
       containers:
         - name: vpromc
